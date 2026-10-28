@@ -25,7 +25,15 @@ Project Nexusの公式LPと、公開安全版Intelligence Vault。
 
 ## 公開情報
 
-公開URL、チェックポイントSHA、公開日時は公開成功後に追記します。
+公開URL: https://nexusvault-nzqxez4t.manus.space
+
+チェックポイントSHA: `81d59a4956d21a92d792d278b90de03038e1455e`
+
+公開デプロイID: `70022935`
+
+公開日時: 2026-10-28 11:27 JST
+
+GitHub main記録SHA: `9c9a7f49052adc5e7ccdab8081de342b0e646edc`
 
 ## 非実行範囲
 
