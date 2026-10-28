@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Project Nexus Intelligence Vault — 出典と検証状態を分けて確認する公開安全版の証拠台帳。" />
+  <link rel="icon" href="/nexus-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/vault.css" />
+  <title>Intelligence Vault — Project Nexus</title>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header is-scrolled vault-header">
+      <a class="brand" href="/"><span class="brand-mark"><img src="/nexus-mark.svg" alt="" /></span><span class="brand-copy"><span>PROJECT</span><strong>NEXUS</strong></span></a>
+      <a class="header-cta" href="/">LPへ戻る <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="vault-main">
+      <section class="vault-hero" aria-labelledby="vault-title">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> EVIDENCE-FIRST PROJECT INTELLIGENCE</p>
+        <h1 id="vault-title">Intelligence <em>Vault</em></h1>
+        <p class="vault-lede">Project Nexusに関する記録を、主張・出典・検証状態に分けて確認するための公開安全版MVPです。未検証の記録を、事実や稼働実績として表示しません。</p>
+        <div class="vault-notice"><strong>公開安全方針</strong><span>秘密鍵・シード・APIキー・個人情報・未公開ファイルは収録していません。ウォレット等の識別子は必要に応じて別環境で検証します。</span></div>
+      </section>
+      <section class="vault-grid" aria-label="棚卸しサマリー">
+        <div class="vault-card metric"><span>取得資料</span><strong data-metric="retrievedFiles">—</strong><small>Drive確認範囲</small></div>
+        <div class="vault-card metric"><span>台帳行</span><strong data-metric="assetRowCount">—</strong><small>重複・推定を含む</small></div>
+        <div class="vault-card metric"><span>参照元</span><strong data-metric="sourceCount">—</strong><small>出典インデックス</small></div>
+        <div class="vault-card metric accent"><span>公開秘密情報</span><strong>0</strong><small>このMVPには未収録</small></div>
+      </section>
+      <section class="vault-section" aria-labelledby="claims-title">
+        <div class="section-heading-row"><p class="eyebrow">CLAIM REGISTER</p><span class="section-index">01 / 02</span></div>
+        <h2 id="claims-title">主張を、<span>証拠と状態</span>から読む。</h2>
+        <div class="vault-controls"><label for="claim-search">検索<input id="claim-search" type="search" placeholder="主張・出典・次の確認を検索" /></label><label for="claim-filter">状態<select id="claim-filter"><option value="all">すべて</option><option value="documented">資料上の記録</option><option value="unverified">未検証</option></select></label></div>
+        <div class="claim-list" data-claims></div>
+      </section>
+      <section class="vault-section" aria-labelledby="actions-title">
+        <div class="section-heading-row"><p class="eyebrow">SAFE NEXT STEPS</p><span class="section-index">02 / 02</span></div>
+        <h2 id="actions-title">次に進める順番を、<span>安全側から。</span></h2>
+        <div class="action-list" data-actions></div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-brand"><span class="brand-mark small"><img src="/nexus-mark.svg" alt="" /></span><span>PROJECT NEXUS / INTELLIGENCE VAULT</span></div><p>公開安全版 · 2026</p><a href="#vault-title">Back to top ↑</a></footer>
+  </div>
+  <script src="/vault.js" defer></script>
+</body>
+</html>

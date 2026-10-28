@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-10-28",
+  "scope": "Project Nexus / AI EmotionProof 関連資料の初回棚卸し",
+  "sourceCount": 53,
+  "assetRowCount": 203,
+  "retrievedFiles": 37,
+  "security": {
+    "secretsPublished": false,
+    "walletAddressesRedacted": true,
+    "privateDocumentsPublished": false
+  },
+  "categories": [
+    {"id":"concept","label":"構想・ホワイトペーパー","count":1,"status":"記録あり"},
+    {"id":"asset","label":"資産・トークン・証明書","count":203,"status":"要個別検証"},
+    {"id":"source","label":"一次ソース・参照元","count":53,"status":"参照記録あり"},
+    {"id":"implementation","label":"実装・稼働状況","count":0,"status":"GitHub上の実装未確認"}
+  ],
+  "claims": [
+    {"id":"claim-001","title":"3層アーキテクチャ構想","summary":"Web3基盤、AI自動化、アプリケーション連携の3層構造を想定。","status":"documented","evidence":"Project Nexus ホワイトペーパー v1.0 / 3. システムアーキテクチャ","nextAction":"実装コード・テスト・運用ログを紐付ける"},
+    {"id":"claim-002","title":"Baseドメインを識別アンカーとして使用","summary":"czth0nfvwpp-kts1.base.eth を主要アンカーとする記述がある。","status":"unverified","evidence":"ホワイトペーパー / 資産台帳","nextAction":"公式ブロックエクスプローラーで所有者・チェーン・取引を確認"},
+    {"id":"claim-003","title":"AI自動化パイプライン","summary":"YouTube監視、要約、画像生成、X/Telegram配信を想定。","status":"unverified","evidence":"ホワイトペーパー / GitHubリポジトリ","nextAction":"実装ファイル、依存関係、実行ログ、API接続を確認"},
+    {"id":"claim-004","title":"スマートコントラクトとトークン群","summary":"ERC-20/721/1155等のトークン・証明書に関する記録が複数存在。","status":"unverified","evidence":"資産台帳 203行 / 参照元1–53","nextAction":"各行に contract_address、chain、tx_hash、source_url、checked_at を追加"}
+  ],
+  "priorityActions": [
+    {"priority":1,"title":"秘密情報の隔離確認","detail":"iPhone、Google Photos、Drive、PC、チャット、GitHubに秘密鍵・シード・APIキーがないか確認。値そのものは台帳へコピーしない。","status":"todo"},
+    {"priority":2,"title":"証拠台帳の正規化","detail":"資産名・主張・出典・チェーン・識別子・検証状態・最終確認日を分離する。重複と推定を明示する。","status":"in_progress"},
+    {"priority":3,"title":"実装リポジトリの再構成","detail":"docs、data、src、verification、tests の境界を作り、READMEに目的・非目的・セキュリティ方針を記載する。","status":"in_progress"},
+    {"priority":4,"title":"検索・証拠表示MVP","detail":"主張を検索し、検証済み・資料上の主張・未検証・機密の区別を表示する。","status":"done"}
+  ]
+}
